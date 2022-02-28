@@ -1,0 +1,16 @@
+@startuml
+class Person {
+    name
+    bags [Bag]
+
+    addBag(Bag)
+}
+class Bag {
+    weight
+}
+class Airport {
+    name
+    code
+}
+Person -- Bag
+@enduml

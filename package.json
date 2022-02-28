@@ -1,0 +1,14 @@
+{
+  "name": "persons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Person.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
