@@ -1,3 +1,5 @@
+const Bag = require('./Bag')
+
 class Person {
     constructor(name, age) {
         if (!name) throw new Error("You must pass in a name")
@@ -6,8 +8,13 @@ class Person {
         this.bags = []
     }
 
-    addBag(bag) { // Bag
-        this.bags.push(bag)
+    addBag(bag) {
+        if (bag instanceof Bag) this.bags.push(bag)
+        else throw new Error("Only Bags please")
+    }
+
+    getBag() {
+        return this.bags.pop()
     }
 }
 
